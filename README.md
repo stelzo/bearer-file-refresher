@@ -47,7 +47,7 @@ docker run --name token-refresher \
 -e KEYCLOAK_USER_PASSWORD=password \
 -e VERBOSE=true \
 -e REFRESH_INTERVAL=4m \
--e KEYCLOAK_BASE_PATH=http://localhost:8080
+-e KEYCLOAK_BASE_PATH=http://localhost:8080 \
 stelzo/bearer-file-refresher
 ```
 
