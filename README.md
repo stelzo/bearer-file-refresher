@@ -48,9 +48,9 @@ docker run --name token-refresher \
 -e VERBOSE=true \
 -e REFRESH_INTERVAL=4m \
 -e KEYCLOAK_BASE_PATH=http://localhost:8080 \
+--user "$(id -u):$(id -g)" \
 stelzo/bearer-file-refresher
 ```
-
 
 ## Build your own
 
